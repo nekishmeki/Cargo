@@ -1,4 +1,4 @@
-.nav{
+header{
     font-family: poppins;
     margin: 0px;
     padding: 0px;
@@ -6,16 +6,11 @@
 }
 ul{
     list-style: none;
+    text-decoration: none;
 }
 a{
     text-decoration: none;
 }
-  body{
-    padding: 0px;
-    margin: 0px;
-    font-family: pappins;
-    background-color: #fafafa;
-  }
 
 /*----Navigacija----*/
 
