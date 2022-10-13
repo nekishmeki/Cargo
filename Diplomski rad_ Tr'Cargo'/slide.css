@@ -1,0 +1,118 @@
+.celo{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 65vh;
+    margin: 0;
+    padding: 0;
+}
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+     width: 800px;
+     height: 500px;
+}
+/* Manuelno menjanje slika */
+.navigation-manual{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.manual-btn{
+    border: 2px solid;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+
+/* Automatsko menjanje slika */
+
+.automatski-nav{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.automatski-nav div{
+    border: 2px solid;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.automatski-nav div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .automatski-nav .auto-btn1{
+    background-color: rgb(255, 255, 255);
+}
+
+#radio2:checked ~ .automatski-nav .auto-btn2{
+    background-color: rgb(255, 255, 255);
+}
+
+#radio3:checked ~ .automatski-nav .auto-btn3{
+    background-color: rgb(255, 255, 255);
+}
+
+#radio4:checked ~ .automatski-nav .auto-btn4{
+    background-color: rgb(255, 255, 255);
+}
+
+#radio5:checked ~ .automatski-nav .auto-btn5{
+    background-color: rgb(255, 255, 255);
+}

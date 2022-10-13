@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>\
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="Nav.css">
+    <link rel="stylesheet" href="onama.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav">
+    <nav class="navigation">
+
+        <!--Logo-->
+        <a href="#" class="logo">
+            Cargo
+        </a>
+
+        <!--Menu-->
+        <ul class="menu">
+            <li><a href="Pocetna.html">Početna Strana</a></li>
+            <li><a href="onama.html">O nama</a></li>
+            <li><a href="katalog.html">Katalog</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+
+        <div class="desni-nav">
+
+            <a href="korpa.html" class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <a href="login.html" class="login">LogIn</a>
+    </div>
+    </nav>
+    </div>
+
+    <div class="onama">
+        <div class="section">
+            <div class="container">
+                <div class="content-section">
+                    <div class="title">
+                        <h1>O nama</h1>
+                    </div>
+                    <div class="content">
+                        <h3>Trgovinska radnja "Cargo"</h3>
+                        <p>Osnovna delatnost preduzeća je trgovina autodelovima. 
+                        Dugogodišnjim radom i korektnim odnosom 
+                        sa partnerima u zemlji i inostranstvu izgradili smo 
+                        reputaciju ozbiljnog partnera. Mi smo član 
+                        GROUPAUTO ADRIA grupe koja je deo GROUPAUTO 
+                        internacionale koja pokriva celu Evropu.<span class="jos"> Trgovinska radnja "Cargo" 
+                        sertifikovan za ISO 9001:2015, ISO 14001:2015 i ISO 
+                        45001:2018 Svi artikli poseduju sertifikat o 
+                        ispunjavanju standarda ISO 9001 i ISO 9002 izdat od 
+                        strane Saveznog Zavoda za Standardizaciju, što 
+                        garantuje da delovi nisu sumnjivog porekla i da su 
+                        proizvedeni pod nadzorom, te da nisu remontovani 
+                        odnosno polovni. Isporuka robe vrši se na teritoriji 
+                        cele Srbije, a u zavisnosti od potreba kupca. 
+                        Pored dostupnih i originalnih delova, preduzeće 
+                        sa svojom poslovnom jedinicom TRUCK SERVICE sada svojim 
+                        klijentima nudi i servisiranje svih brendova 
+                        kamiona, prikolica i autobusa. Zatim, popravke elektrike, 
+                        elektronike, klime, limarije, centriranje trapa, 
+                        zamene guma, kao i provera tehničke ispravnosti. 
+                        Takođe, pored dijagnostike u servisu prisutna je 
+                        tehnička podrška, prodaja, kao i obuka.</span></p>
+                        <div class="button">
+                        <a href="" class="dugme">Procitaj vise</a>
+                    </div>
+                </div>
+                
+                <div class="social">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+                </div>
+                <div class="image-section">
+                    <img src="Slike/unnamed.jpg">
+                </div>    
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    const parentContainer = document.querySelector('.read-more-container');
+
+    parentContainer.addEventListener('click', event=>{
+        const current = event.target;
+        const isReadMoreBtn = current.className.includes('read-more-btn');
+        if(!isReadMoreBtn) return;
+        const currentText = event.target.parentNode.querySelector('.read-more-text');
+        currentText.classList.toggle('read-more-text--show');
+        current.textContent = current.textContent.includes('Read More') ? "Read less..." : "Read More..."
+    })
+</script>
+</html>
