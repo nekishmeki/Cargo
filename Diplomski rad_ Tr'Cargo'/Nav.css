@@ -62,7 +62,7 @@ a{
     letter-spacing: 0.5px;
 }
 
-.desni-nav .cart{
+.desni-nav .cart-img{
     background-color: #ecf7ee;
     color: #20B2AA;
     width: 40px;
@@ -73,7 +73,7 @@ a{
     border-radius: 50%;
 }
 
-.cart:hover{
+.cart-img:hover{
     color:#f2ff00;
     transition: 0.4s;
 }
